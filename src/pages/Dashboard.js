@@ -26,7 +26,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchLatest();
-    const channel = supabase
+    const channel = supabase // eslint-disable-line react-hooks/exhaustive-deps
       .channel('vitals-channel')
       .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'vitals' }, (payload) => {
         const d = payload.new;

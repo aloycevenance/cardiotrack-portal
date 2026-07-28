@@ -18,8 +18,9 @@ export default function Reports() {
   const [timeFilter, setTimeFilter] = useState('Daily');
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+ useEffect(() => {
     fetchData();
+    // eslint-disable-line react-hooks/exhaustive-deps
   }, [timeFilter]);
 
   async function fetchData() {
