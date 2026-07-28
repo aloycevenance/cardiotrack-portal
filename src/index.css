@@ -1,0 +1,37 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F0F4F8;
+  --surface: #FFFFFF;
+  --surface2: #F8FAFC;
+  --border: #E2E8F0;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --accent: #a12432;
+  --accent-bg: #FFF0F0;
+  --accent-text: #a12432;
+  --success: #0D9E6E;
+  --success-bg: #ECFDF5;
+  --danger: #a12432;
+  --danger-bg: #FEF2F2;
+  --warning: #D97706;
+  --warning-bg: #FFFBEB;
+  --purple: #7C3AED;
+  --purple-bg: #F5F3FF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #F0F4F8;
+  color: #0F172A;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
